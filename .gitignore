@@ -1,0 +1,5 @@
+elpa/
+session.*
+smex-items
+projectile-bookmarks.eld
+auto-save-list
