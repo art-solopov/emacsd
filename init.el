@@ -11,18 +11,23 @@
  ;; If there is more than one, they won't work right.
  '(backup-by-copying t)
  '(backup-directory-alist (quote (("." . "~/.emacs-file-bak"))))
+ '(coffee-tab-width 2)
  '(column-number-mode t)
  '(custom-enabled-themes (quote (ample-zen)))
  '(custom-safe-themes
    (quote
     ("1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
+ '(global-flycheck-mode t)
  '(global-linum-mode t)
  '(helm-smex-show-bindings t)
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
     (coffee-mode scss-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+ '(projectile-completion-system (quote helm))
+ '(projectile-mode t nil (projectile))
  '(ruby-align-chained-calls t)
+ '(ruby-insert-encoding-magic-comment nil)
  '(show-paren-mode t)
  '(visible-bell t))
 (custom-set-faces
