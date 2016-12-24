@@ -3,3 +3,6 @@ session.*
 smex-items
 projectile-bookmarks.eld
 auto-save-list
+anaconda-mode
+eshell
+projectile.cache

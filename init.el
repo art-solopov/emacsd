@@ -13,17 +13,23 @@
  '(backup-directory-alist (quote (("." . "~/.emacs-file-bak"))))
  '(coffee-tab-width 2)
  '(column-number-mode t)
+ '(company-backends
+   (quote
+    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
+		  (company-dabbrev-code company-gtags company-etags company-keywords)
+		  company-oddmuse company-dabbrev)))
  '(custom-enabled-themes (quote (ample-zen)))
  '(custom-safe-themes
    (quote
     ("1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
+ '(global-company-mode t)
  '(global-flycheck-mode t)
  '(global-linum-mode t)
  '(helm-smex-show-bindings t)
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (coffee-mode scss-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (anaconda-mode company-anaconda haml-mode handlebars-mode company coffee-mode scss-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(ruby-align-chained-calls t)
@@ -41,19 +47,25 @@
       (concat user-emacs-directory "config/")
       )
 
+(setq custom-pkg-dir
+      (concat user-emacs-directory "custom-pkg")
+      )
+
 (defun after-init-packages ()
   (require 'f)
   (require 'dash)
   (require 's)
-  (add-to-list 'load-path config-dir)       
+  (add-to-list 'load-path config-dir)
   
   (dolist (fn
            (-distinct
             (--map (f-base it)
                    (--filter (s-ends-with? ".el" it) (f-entries config-dir)))))
-           (message fn)
-           (load-library fn)
+    (message fn)
+    (load-library fn)
     )
+
+  (--each (f-entries custom-pkg-dir) (package-install-file it))
 )
 
 (add-hook 'after-init-hook 'after-init-packages)
