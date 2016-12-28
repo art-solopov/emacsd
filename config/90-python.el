@@ -17,8 +17,6 @@
 
 (defun load-project-virtualenv ()
   (interactive)
-  (message "Switched to project")
-  (message default-directory)
   (when (projectile-project-p)
     (let (
 	  (venv-path (f-join (projectile-project-root) "venv"))
@@ -29,11 +27,7 @@
     )
   )
 
-;; (setq projectile-switch-project-action
-;;       (lambda () (progn (load-project-virtualenv) (projectile-find-file) )))
-
 (add-hook 'projectile-before-project-action-hook 'load-project-virtualenv)
-; (add-hook 'projectile-after-switch-project-hook 'load-project-virtualenv)
 
 ;;; Anaconda & Company
 

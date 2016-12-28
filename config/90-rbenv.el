@@ -1,3 +1,4 @@
+(global-rbenv-mode)
 (rbenv-use-global)
 
 (defun set-ruby ()
@@ -8,7 +9,7 @@
 	)  
   )
 
-(add-hook 'projectile-find-file-hook
+(add-hook 'projectile-before-project-action-hook
 	  'set-ruby)
 
 

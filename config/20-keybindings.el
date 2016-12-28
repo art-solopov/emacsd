@@ -14,3 +14,6 @@
 ;; Ace window
 (global-set-key (kbd "C-x w") 'ace-window) 
 (global-set-key (kbd "C-x M-w") 'ace-window)
+
+;; Various
+(global-set-key (kbd "C-x C-b") 'ibuffer)
