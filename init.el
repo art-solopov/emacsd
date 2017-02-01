@@ -9,6 +9,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auto-save-file-name-transforms
+   (quote
+    (("\\`/[^/]*:\\([^/]*/\\)*\\([^/]*\\)\\'" "/tmp/\\2" t)
+     (".*" "~/.emacs-file-auto-save/\\1" t))))
  '(backup-by-copying t)
  '(backup-directory-alist (quote (("." . "~/.emacs-file-bak"))))
  '(coffee-tab-width 2)
@@ -29,19 +33,13 @@
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (anaconda-mode company-anaconda haml-mode handlebars-mode company coffee-mode scss-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (anaconda-mode company-anaconda haml-mode company coffee-mode scss-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(ruby-align-chained-calls t)
  '(ruby-insert-encoding-magic-comment nil)
  '(show-paren-mode t)
  '(visible-bell t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :slant normal :weight normal :height 125 :width normal :foundry "adobe" :family "Source Code Pro")))))
 
 (setq config-dir
       (concat user-emacs-directory "config/")
@@ -69,3 +67,9 @@
 )
 
 (add-hook 'after-init-hook 'after-init-packages)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

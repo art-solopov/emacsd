@@ -27,7 +27,7 @@
     )
   )
 
-(add-hook 'projectile-before-project-action-hook 'load-project-virtualenv)
+(add-hook 'projectile-after-switch-project-hook 'load-project-virtualenv)
 
 ;;; Anaconda & Company
 
