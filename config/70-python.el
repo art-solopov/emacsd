@@ -27,8 +27,6 @@
     )
   )
 
-(add-hook 'projectile-after-switch-project-hook 'load-project-virtualenv)
-
 ;;; Anaconda & Company
 
 (add-hook 'python-mode-hook 'anaconda-mode)
