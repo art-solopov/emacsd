@@ -10,10 +10,12 @@
 ;; Helm
 (global-set-key (kbd "M-x") #'helm-smex)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-c i") 'helm-imenu)
 
 ;; Ace window
-(global-set-key (kbd "C-x w") 'ace-window) 
-(global-set-key (kbd "C-x M-w") 'ace-window)
+(global-set-key (kbd "C-x w") 'ace-window)
+(global-set-key (kbd "C-x M-w") 'ace-delete-window)
 
 ;; Various
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x j") 'join-line)
