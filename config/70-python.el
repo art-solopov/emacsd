@@ -1,5 +1,22 @@
 ;;; 90-python.el --- Various configurations for Python
 (require 'f)
+(require 's)
+
+;;; Pyenv
+
+(defun set-pyenv-project-version (project-path)
+  (let (
+	(python-version-path (f-join project-path ".python-version"))
+	)
+    (when (f-exists? python-version-path)
+      (let (
+	    (python-version (s-trim (f-read-text python-version-path)))
+	    )
+	(pyenv-mode-set python-version)
+	)
+      )
+   )
+    )
 
 ;;; Flycheck & virtualenv
 
@@ -21,6 +38,7 @@
     (let (
 	  (venv-path (f-join (projectile-project-root) "venv"))
 	  )
+      (set-pyenv-project-version (projectile-project-root))
       (pythonic-activate venv-path)
       (set-flymake-python-paths)
       )
