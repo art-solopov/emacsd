@@ -11,6 +11,7 @@
 (global-set-key (kbd "M-x") #'helm-smex)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-c i") 'helm-imenu)
+(global-set-key (kbd "C-c s") 'helm-css-scss)
 
 ;; Ace window
 (global-set-key (kbd "C-x w") 'ace-window)
