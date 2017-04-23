@@ -26,6 +26,7 @@
  '(custom-safe-themes
    (quote
     ("1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
+ '(flycheck-disabled-checkers (quote (scss sass)))
  '(global-company-mode t)
  '(global-flycheck-mode t)
  '(global-linum-mode t)
@@ -33,13 +34,20 @@
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
+ '(projectile-rails-javascript-dirs
+   (quote
+    ("app/assets/javascripts/" "lib/assets/javascripts/" "public/javascripts/" "app/javascripts")))
+ '(projectile-rails-stylesheet-dirs
+   (quote
+    ("app/assets/stylesheets/" "lib/assets/stylesheets/" "public/stylesheets/" "app/javascripts/")))
  '(projectile-switch-project-action (quote projectile-dired))
  '(ruby-align-chained-calls t)
  '(ruby-insert-encoding-magic-comment nil)
  '(show-paren-mode t)
+ '(smartparens-global-mode t)
  '(visible-bell t))
 
 (setq config-dir
