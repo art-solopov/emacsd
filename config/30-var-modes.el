@@ -1,3 +1,5 @@
+(require 'all-the-icons)
+
 (rainbow-mode 1)
 
 (add-hook 'ruby-mode-hook 'ruby-electric-mode)
@@ -21,6 +23,14 @@
 	  )
 
 (global-diff-hl-mode)
+
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+(add-to-list 'all-the-icons-icon-alist
+	     '("^Rakefile$" all-the-icons-octicon "ruby" v-adjust 0.0 :face all-the-icons-lred))
+(add-to-list 'all-the-icons-icon-alist
+	     '("^Gemfile$" all-the-icons-octicon "ruby" v-adjust 0.0 :face all-the-icons-blue))
+(add-to-list 'all-the-icons-icon-alist
+	     '("^Gemfile.lock$" all-the-icons-octicon "ruby" v-adjust 0.0 :face all-the-icons-dsilver))
 
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
