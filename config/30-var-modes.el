@@ -1,4 +1,5 @@
 (require 'all-the-icons)
+(require 'dired+)
 
 (rainbow-mode 1)
 
