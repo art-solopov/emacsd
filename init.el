@@ -20,8 +20,8 @@
  '(company-backends
    (quote
     (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
-		  (company-dabbrev-code company-gtags company-etags company-keywords)
-		  company-oddmuse company-dabbrev)))
+                  (company-dabbrev-code company-gtags company-etags company-keywords)
+                  company-oddmuse company-dabbrev)))
  '(custom-enabled-themes (quote (ample-zen)))
  '(custom-safe-themes
    (quote
@@ -32,10 +32,12 @@
  '(global-flycheck-mode t)
  '(global-linum-mode t)
  '(helm-smex-show-bindings t)
+ '(indent-tabs-mode nil)
+ '(js2-strict-missing-semi-warning nil)
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (nvm dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(projectile-rails-javascript-dirs
@@ -47,6 +49,7 @@
  '(projectile-switch-project-action (quote projectile-dired))
  '(ruby-align-chained-calls t)
  '(ruby-insert-encoding-magic-comment nil)
+ '(safe-local-variable-values (quote ((js2-basic-offset . 2))))
  '(show-paren-mode t)
  '(smartparens-global-mode t)
  '(visible-bell t)

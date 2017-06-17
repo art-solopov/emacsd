@@ -32,6 +32,9 @@
 	     '("^Gemfile$" all-the-icons-octicon "ruby" v-adjust 0.0 :face all-the-icons-blue))
 (add-to-list 'all-the-icons-icon-alist
 	     '("^Gemfile.lock$" all-the-icons-octicon "ruby" v-adjust 0.0 :face all-the-icons-dsilver))
+(add-to-list 'all-the-icons-icon-alist
+	     '("\\.vue\\'" all-the-icons-fileicon "vue" :face all-the-icons-lgreen ))
+
 
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

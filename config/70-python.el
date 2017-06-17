@@ -1,4 +1,4 @@
-;;; 90-python.el --- Various configurations for Python
+;;; 70-python.el --- Various configurations for Python
 (require 'f)
 (require 's)
 
