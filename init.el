@@ -37,7 +37,7 @@
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (nvm dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(projectile-rails-javascript-dirs
