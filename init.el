@@ -67,8 +67,11 @@
   (require 'f)
   (require 'dash)
   (require 's)
+  (f-mkdir config-dir custom-pkg-dir "~/.emacs-file-auto-save")
+  (-each (-map 'cdr backup-directory-alist) 'f-mkdir)
+
   (add-to-list 'load-path config-dir)
-  
+
   (dolist (fn
            (-distinct
             (--map (f-base it)
