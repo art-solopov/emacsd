@@ -31,6 +31,7 @@
  '(global-company-mode t)
  '(global-flycheck-mode t)
  '(global-linum-mode t)
+ '(global-whitespace-mode t)
  '(helm-smex-show-bindings t)
  '(indent-tabs-mode nil)
  '(js2-strict-missing-semi-warning nil)
@@ -53,6 +54,9 @@
  '(show-paren-mode t)
  '(smartparens-global-mode t)
  '(visible-bell t)
+ '(whitespace-style
+   (quote
+    (face trailing tabs lines-tail empty indentation::space space-after-tab space-before-tab tab-mark)))
  '(yas-global-mode t))
 
 (setq config-dir
@@ -89,4 +93,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(whitespace-line ((t (:background "PaleVioletRed1" :foreground "black")))))
