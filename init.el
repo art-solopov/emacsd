@@ -31,7 +31,7 @@
  '(global-company-mode t)
  '(global-flycheck-mode t)
  '(global-linum-mode t)
- '(global-whitespace-mode t)
+ '(global-whitespace-mode nil)
  '(helm-smex-show-bindings t)
  '(indent-tabs-mode nil)
  '(js2-strict-missing-semi-warning nil)
@@ -93,4 +93,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(whitespace-line ((t (:background "PaleVioletRed1" :foreground "black")))))
+ '(whitespace-line ((t (:background "dark violet" :foreground "gainsboro")))))

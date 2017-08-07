@@ -1,5 +1,7 @@
+(require 'dash)
 (require 'all-the-icons)
 (require 'dired+)
+(require 'whitespace)
 
 (rainbow-mode 1)
 
@@ -44,6 +46,21 @@
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.handlebars\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+
+(defun whitespace-lite ()
+  (message "Loading whitespace mode")
+  (make-local-variable 'whitespace-style)
+  (setq whitespace-style
+        (-remove-item 'lines-tail whitespace-style))
+  (whitespace-mode 1)
+  )
+
+(add-hook 'ruby-mode-hook 'whitespace-mode)
+(add-hook 'python-mode-hook 'whitespace-mode)
+
+(add-hook 'slim-mode-hook 'whitespace-lite)
+(add-hook 'haml-mode-hook 'whitespace-lite)
+(add-hook 'web-mode-hook 'whitespace-lite)
 
 (provide '30-var-modes)
 ;;; 30-var-modes ends here
