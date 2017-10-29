@@ -38,7 +38,7 @@
  '(kept-new-versions 6)
  '(package-selected-packages
    (quote
-    (dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
+    (evil-commentary evil-surround company-racer evil helm-flycheck helm-robe robe company-lua lua-mode dired+ all-the-icons all-the-icons-dired flycheck-rust rust-mode helm-css-scss toml-mode pyenv-mode smartparens diff-hl anaconda-mode company-anaconda haml-mode company coffee-mode undo-tree ruby-electric web-mode yaml-mode uuidgen flycheck magit magit-gitflow rbenv rjsx-mode ruby-tools helm-c-yasnippet helm-rails ace-jump-helm-line ace-jump-mode ace-window slim-mode markdown-mode markdown-mode+ js2-mode json-mode react-snippets yasnippet ample-zen-theme rainbow-mode helm-projectile projectile projectile-git-autofetch projectile-rails helm helm-ag helm-git helm-smex smex s f dash)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(projectile-rails-javascript-dirs
@@ -93,4 +93,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "#212121" :foreground "#bdbdb3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 133 :width normal :family "Hack"))))
  '(whitespace-line ((t (:background "dark violet" :foreground "gainsboro")))))
